@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fcf7dc;
+  display: flex;
+  flex-direction: column;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("../images/Trailhead_Plumbing.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 450px;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.site-header {
+  background: #c3b265;
+  color: #8d5500fe;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  text-align: center;
+}
+
+.nav-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand-name {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.header-logo {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
+nav a {
+  color: #8d5500fe;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.call-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.25rem;
+  background: #b76f03;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.call-button:hover {
+  opacity: 0.9;
+}
+
+footer {
+  background: #c3b265;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+form {
+  max-width: 600px;
+  margin-top: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+button {
+  background: #b76f03;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .site-header,
+  .nav-container {
+    flex-direction: column;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0.5rem;
+  }
+}
